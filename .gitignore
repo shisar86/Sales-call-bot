@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Node
+node_modules/
+dist/
+.env.local
+.env.development
+.env.production
+
+# Logs
+*.log
+
+# Ngrok
+ngrok.yml
+
+# OS
+.DS_Store
+Thumbs.db
