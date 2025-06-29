@@ -1,0 +1,38 @@
+.homepage-hero {
+  background: linear-gradient(135deg, #7E102C 60%, #4A234A 100%);
+  min-height: 70vh;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadein {
+  animation: fadein 1.2s ease-in;
+}
+
+@keyframes fadein2 {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadein2 {
+  animation: fadein2 1.5s 0.5s both;
+}
+
+@keyframes slidein {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slidein {
+  animation: slidein 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes zoomin {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.animate-zoomin {
+  animation: zoomin 1.2s 0.7s both;
+}

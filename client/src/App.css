@@ -1,3 +1,8 @@
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f8f6fa;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Animations */
+@keyframes fadein2 {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadein2 {
+  animation: fadein2 1s cubic-bezier(.68,-0.55,.27,1.55);
+}
+@keyframes slidein {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slidein {
+  animation: slidein 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce {
+  animation: bounce 1.2s infinite;
+}
+
+/* Navbar and Footer overrides */
+nav, footer {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Product card hover */
+.bg-white.rounded-xl.shadow-lg:hover {
+  box-shadow: 0 8px 32px 0 rgba(126,16,44,0.18), 0 1.5px 4px 0 rgba(74,35,74,0.10);
+  transform: translateY(-4px) scale(1.03);
+  transition: box-shadow 0.3s, transform 0.3s;
 }

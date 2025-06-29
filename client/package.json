@@ -4,6 +4,7 @@
   "proxy": "http://localhost:8000",
   "private": true,
   "dependencies": {
+    "@clerk/clerk-react": "^5.32.2",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -11,6 +12,7 @@
     "axios": "^1.10.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

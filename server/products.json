@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Smart Home Hub",
+    "price": 99.99,
+    "description": "Control all your smart devices from one place.",
+    "_id": "1"
+  },
+  {
+    "name": "Premium Subscription",
+    "price": 19.99,
+    "description": "Unlock advanced features and 24/7 support.",
+    "_id": "2"
+  },
+  {
+    "name": "Mobile App Pro",
+    "price": 9.99,
+    "description": "Boost your productivity with our pro mobile app.",
+    "_id": "3"
+  },
+  {
+    "name": "Personal Productivity Tool",
+    "price": 29.99,
+    "description": "Organize your tasks and goals efficiently.",
+    "_id": "4"
+  }
+]
