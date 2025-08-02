@@ -1,0 +1,7 @@
+flask
+twilio
+python-dotenv
+openai
+pyngrok
+faster-whisper
+numpy
