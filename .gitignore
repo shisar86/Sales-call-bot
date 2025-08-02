@@ -19,3 +19,5 @@ ngrok.yml
 # OS
 .DS_Store
 Thumbs.db
+
+.information.txt

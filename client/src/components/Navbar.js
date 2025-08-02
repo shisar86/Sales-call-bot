@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { useUser } from '@clerk/clerk-react';
+import { useUser, UserButton } from '@clerk/clerk-react';
 
 const userNavLinks = [
   { to: '/', label: 'Home' },
@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav style={{ background: 'linear-gradient(90deg, #7E102C 60%, #4A234A 100%)' }} className="fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <div className="text-white text-2xl font-bold tracking-wider">AI Sales Agent</div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 items-center">
           {navLinks.map(link => (
             <Link
               key={link.to}
@@ -32,6 +32,8 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          {/* Clerk UserButton for both signed in and out */}
+          <UserButton afterSignOutUrl="/" />
         </div>
       </div>
     </nav>
